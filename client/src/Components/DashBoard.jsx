@@ -1,15 +1,15 @@
-import React from "react";
 import TopUsers from "./TopUsers";
+import TopPosts from "./TopPosts";
+import NewPosts from "./NewPost";
 
 const Dashboard = () => {
   return (
-    <div className="p-4 md:p-6 lg:p-8">
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-6">
-        Dashboard
-      </h1>
-      <div className="bg-white shadow-md rounded-lg p-4 md:p-6">
-        <h2 className="text-lg md:text-xl font-semibold mb-4">Top 5 Users</h2>
+    <div className="p-5 min-h-screen bg-gray-100">
+      <h1 className="text-2xl font-bold text-center mb-6">📊 Dashboard</h1>
+      <div className="flex flex-wrap justify-center gap-4">
         <TopUsers />
+        <TopPosts />
+        <NewPosts />
       </div>
     </div>
   );
