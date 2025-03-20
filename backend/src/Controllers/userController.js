@@ -1,4 +1,4 @@
-import pool from "../../db.js";  // Import the connection pool
+import pool from "../../db.js"; 
 
 export const getTopUsers = async (req, res) => {
   try {
