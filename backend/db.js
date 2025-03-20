@@ -6,7 +6,7 @@ const pool = mysql.createPool({
   password: "padmacs253",
   database: "social_media",
   waitForConnections: true,
-  connectionLimit: 10,  // Adjust based on your needs
+  connectionLimit: 10,  
   queueLimit: 0,
 });
 
