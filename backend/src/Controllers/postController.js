@@ -1,6 +1,5 @@
-import db from "../../db.js"; // Import your MySQL connection
+import db from "../../db.js";
 
-// Get posts with the maximum number of comments
 export const getMaxCommentedPosts = async (req, res) => {
     try {
         const query = `
@@ -27,10 +26,10 @@ export const getMaxCommentedPosts = async (req, res) => {
 };
 
 
-// Get latest posts (newest first)
+
 export const getLatestPosts = async (req, res) => {
     try {
-        const query = `SELECT * FROM posts ORDER BY created_at DESC`; // Assuming `created_at` is a timestamp column
+        const query = `SELECT * FROM posts ORDER BY created_at DESC`;
         const [rows] = await db.execute(query);
 
         res.status(200).json(rows);
