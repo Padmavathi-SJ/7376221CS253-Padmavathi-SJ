@@ -12,7 +12,7 @@ const NewPosts = () => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-4 w-full md:w-1/3">
-      <h2 className="text-lg font-bold mb-3 text-center">🆕 New Posts</h2>
+      <h2 className="text-lg font-bold mb-3 text-center"> New Posts</h2>
       <ul className="space-y-2">
         {posts.map((post) => (
           <li key={post.id} className="p-2 border-b">
